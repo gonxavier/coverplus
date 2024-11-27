@@ -27,3 +27,58 @@
 .top-margin {
     margin-top: 60px;
 }
+
+/* HERO BACKGROUND */
+
+.hero-back {
+    background-image: url(../../assets/img/hero-back.png);
+    background-position: center;
+}
+
+/* HERO MOBILE */
+@media (max-width: 540px) {
+    .hero-img {
+        height: 250px;
+    }
+    .hero-back {
+        background-image: url(../../assets/img/hero-back-mob.png);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    }
+
+/*--------------------------------------------------------------
+# Alt Features Section
+--------------------------------------------------------------*/
+.alt-features .icon-box {
+    display: flex;
+    align-items: center;
+}
+
+.alt-features .icon-box h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.alt-features .icon-box i {
+    font-size: 44px;
+    line-height: 44px;
+    color: var(--accent-color);
+    margin-right: 15px;
+}
+
+.alt-features .icon-box p {
+    font-size: 15px;
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    margin-bottom: 0;
+}
+
+/* CENTRAR EN MOBILE */
+@media (max-width: 768px) {
+    .alt-features .centrar {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    }

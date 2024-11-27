@@ -14,14 +14,18 @@
   --default-color: #444444;
 
   /* Heading Color - This color is used for titles, headings and secondary elements. */
-  --heading-color: #3852BA;
+  /* --heading-color: #3852BA; */
+  --heading-color: #007AFF;
 
   /* Accent Color - This is the main accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out. */
-  /* --accent-color: #47b2e4; */
   --accent-color: #FF7A59;
 
   /* Contrast Color - This is a color used for text when the background color is one of the heading, accent, or default colors. Its purpose is to ensure proper contrast and readability when placed over these more dominant colors. */
   --contrast-color: #ffffff;
+
+  /* WhatsApp Color */
+  --whatsapp-color: #25d366;
+  --whatsapp-hover: #76e7a0;
 }
 
 /* Nav Menu Colors */
@@ -30,7 +34,6 @@
   --nav-color: #ffffff;
 
   /* Nav Hover Color - This color is applied to main navmenu links when they are hovered over. */
-  /* --nav-hover-color: #47b2e4; */
   --nav-hover-color: #FF7A59;
 
   /* Nav Dropdown Background Color - This color is used as the background for dropdown boxes that appear when hovering over primary navigation items. */
@@ -112,7 +115,7 @@ h6 {
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: var(--whatsapp-color);
   font-size: 14px;
   padding: 8px 25px;
   margin: 0 0 0 30px;
@@ -123,7 +126,7 @@ h6 {
 .header .btn-getstarted:hover,
 .header .btn-getstarted:focus:hover {
   color: var(--contrast-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  background: color-mix(in srgb, var(--whatsapp-hover), transparent 5%);
 }
 
 @media (max-width: 1200px) {
@@ -147,7 +150,7 @@ h6 {
 .index-page .header {
   --background-color: rgb(255, 255, 255);
   --heading-color: #ffffff;
-  --nav-color: #3852BA;
+  --nav-color: #007aff;
 }
 
 /* Index Page Header on Scroll
@@ -838,15 +841,15 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  /* --background-color: #37517e; */
-  --background-color: #3852BA;
+  /* --background-color: #007AFF; */
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --contrast-color: #ffffff;
   width: 100%;
-  min-height: 80vh;
+  min-height: 600px;
   position: relative;
-  padding: 120px 0 60px 0;
+  /* padding: 120px 0 60px 0; */
+  padding: 0px 0 0px 0;
   display: flex;
   align-items: center;
 }
@@ -868,7 +871,7 @@ section,
 
 .hero .btn-get-started {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: var(--whatsapp-color);
   font-family: var(--heading-font);
   font-weight: 500;
   font-size: 15px;
@@ -881,7 +884,7 @@ section,
 
 .hero .btn-get-started:hover {
   color: var(--contrast-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  background: color-mix(in srgb, var(--whatsapp-hover), transparent 5%);
 }
 
 .hero .btn-watch-video {
