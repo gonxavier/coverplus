@@ -31,8 +31,10 @@
 /* HERO BACKGROUND */
 
 .hero-back {
-    background-image: url(../../assets/img/hero-back.png);
-    background-position: center;
+    background-image: url(../../assets/img/hero-wide.png);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
 }
 
 /* HERO MOBILE */
@@ -41,11 +43,16 @@
         height: 250px;
     }
     .hero-back {
-        background-image: url(../../assets/img/hero-back-mob.png);
+        background-image: url(../../assets/img/hero-tall.png);
         background-position: center;
         background-repeat: no-repeat;
     }
     }
+
+/* CONTACTO */
+.contacto {
+    margin-top: 80px;
+}
 
 /*--------------------------------------------------------------
 # Alt Features Section

@@ -846,7 +846,8 @@ section,
   --heading-color: #ffffff;
   --contrast-color: #ffffff;
   width: 100%;
-  min-height: 600px;
+  /* min-height: 600px; */
+  height: 90vh;
   position: relative;
   /* padding: 120px 0 60px 0; */
   padding: 0px 0 0px 0;
@@ -948,7 +949,9 @@ section,
 --------------------------------------------------------------*/
 .clients {
   --background-color: color-mix(in srgb, var(--heading-color), transparent 95%);
-  padding: 12px 0;
+  padding: 0px 0;
+  height: 10vh;
+  align-content: center;
 }
 
 .clients .swiper {
