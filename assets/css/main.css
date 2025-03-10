@@ -81,6 +81,10 @@ h6 {
   font-family: var(--heading-font);
 }
 
+.hidden-title {
+  display: none;
+}
+
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
@@ -349,7 +353,8 @@ h6 {
   }
 
   .navmenu a,
-  .navmenu a:focus {
+  .navmenu a:focus
+  .navemnu-active {
     color: var(--nav-dropdown-color);
     padding: 10px 20px;
     font-family: var(--nav-font);
@@ -860,6 +865,15 @@ section,
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
+}
+
+.hero .hero-title {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: var(--heading-color);
+  font-family: var(--heading-font);
 }
 
 .hero p {
