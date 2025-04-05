@@ -1,39 +1,57 @@
-<?xml version="1.0" encoding="UTF-8"?> 
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"> 
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
-<loc>https://coverplus.com.ar/index.html</loc>
+  <loc>https://coverplus.com.ar/</loc>
+  <lastmod>2025-04-05T20:36:33+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-<loc>https://coverplus.com.ar/coberturas.html</loc>
+  <loc>https://coverplus.com.ar/index.html</loc>
+  <lastmod>2025-04-05T20:36:33+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://coverplus.com.ar/contacto.html</loc>
+  <loc>https://coverplus.com.ar/coberturas.html</loc>
+  <lastmod>2025-04-05T20:36:33+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://coverplus.com.ar/service-details.html</loc>
+  <loc>https://coverplus.com.ar/contacto.html</loc>
+  <lastmod>2025-04-05T20:36:33+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://coverplus.com.ar/index.html#hero</loc>
+  <loc>https://coverplus.com.ar/blog/blog-main.html</loc>
+  <lastmod>2025-04-05T20:36:33+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://coverplus.com.ar/index.html#alt-features</loc>
+  <loc>https://coverplus.com.ar/blog/posts/post-siniestro-auto.html</loc>
+  <lastmod>2025-04-05T20:36:33+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://coverplus.com.ar/index.html#faq-2</loc>
+  <loc>https://coverplus.com.ar/blog/posts/post-fraude.html</loc>
+  <lastmod>2025-04-05T20:36:33+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://coverplus.com.ar/blog/blog-main.html</loc>
+  <loc>https://coverplus.com.ar/blog/posts/post-errores.html</loc>
+  <lastmod>2025-04-05T20:36:33+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://coverplus.com.ar/blog/posts/post-asistencia.html</loc>
+  <loc>https://coverplus.com.ar/blog/posts/post-asistencia.html</loc>
+  <lastmod>2025-04-05T20:36:33+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
-<url>
-<loc>https://coverplus.com.ar/blog/posts/post-errores.html</loc>
-</url>
-<url>
-<loc>https://coverplus.com.ar/blog/posts/post-fraude.html</loc>
-</url>
-<url>
-<loc>https://coverplus.com.ar/blog/posts/post-siniestro-auto.html</loc>
-</url>
+
+
 </urlset>
