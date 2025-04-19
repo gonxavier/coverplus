@@ -1,0 +1,18 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Redirección para el blog index
+  RewriteRule ^blog/?$ blog/index.html [L]
+
+  # Slugs de artículos del blog
+  RewriteRule ^blog/que-hacer-seguro-accidente-transito/?$ blog/que-hacer-seguro-accidente-transito.html [L]
+  RewriteRule ^blog/fraude-en-seguros-estrategias-efectivas/?$ blog/fraude-en-seguros-estrategias-efectivas.html [L]
+  RewriteRule ^blog/errores-comunes-al-elegir-seguro-auto/?$ blog/errores-comunes-al-elegir-seguro-auto.html [L]
+  RewriteRule ^blog/servicio-de-asistencia-aseguradoras/?$ blog/servicio-de-asistencia-aseguradoras.html [L]
+
+  # Opcional: redireccionar .html a ruta limpia
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.+)/$ /$1.html [L]
+</IfModule>
