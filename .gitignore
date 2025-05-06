@@ -1,2 +1,18 @@
+# Dependencias
+node_modules/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos comprimidos
+*.zip
+
+# Imágenes (versionadas junto al sitio)
+*.png
+*.jpg
+*.jpeg
+*.webp
+
+# Copias temporales
 index - copia.html
-assets/img/cover.ico
