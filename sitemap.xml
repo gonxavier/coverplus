@@ -13,45 +13,38 @@
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://coverplus.com.ar/index.html</loc>
+  <loc>https://coverplus.com.ar/coberturas</loc>
   <lastmod>2025-04-05T20:36:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://coverplus.com.ar/coberturas.html</loc>
+  <loc>https://coverplus.com.ar/contacto</loc>
   <lastmod>2025-04-05T20:36:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://coverplus.com.ar/contacto.html</loc>
+  <loc>https://coverplus.com.ar/blog/</loc>
   <lastmod>2025-04-05T20:36:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://coverplus.com.ar/blog/blog-main.html</loc>
-  <lastmod>2025-04-05T20:36:33+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://coverplus.com.ar/blog/posts/post-siniestro-auto.html</loc>
+  <loc>https://coverplus.com.ar/blog/que-hacer-seguro-accidente-transito</loc>
   <lastmod>2025-04-05T20:36:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://coverplus.com.ar/blog/posts/post-fraude.html</loc>
+  <loc>https://coverplus.com.ar/blog/fraude-en-seguros-estrategias-efectivas</loc>
   <lastmod>2025-04-05T20:36:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://coverplus.com.ar/blog/posts/post-errores.html</loc>
+  <loc>https://coverplus.com.ar/blog/errores-comunes-al-elegir-seguro-auto</loc>
   <lastmod>2025-04-05T20:36:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://coverplus.com.ar/blog/posts/post-asistencia.html</loc>
+  <loc>https://coverplus.com.ar/blog/servicio-de-asistencia-aseguradoras</loc>
   <lastmod>2025-04-05T20:36:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
-
-
 </urlset>
