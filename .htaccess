@@ -10,6 +10,9 @@
   RewriteRule ^blog/ranking-agosto25\.html$ /blog/ranking-ventas-autos-agosto-2025 [R=301,L]
   RewriteRule ^blog/freelance-a-pymes\.html$ /blog/freelance-a-pymes-proteccion-de-tu-negocio [R=301,L]
 
+  # ── FAQ page ─────────────────────────────────────────────────────────────────
+  RewriteRule ^faq/?$ faq/index.html [L]
+
   # ── Clean slug → .html file ──────────────────────────────────────────────────
   RewriteRule ^blog/?$ blog/index.html [L]
   RewriteRule ^blog/que-hacer-seguro-accidente-transito/?$ blog/que-hacer-seguro-accidente-transito.html [L]
