@@ -149,8 +149,8 @@ function formatDateEs(isoDate) {
 
 // ─── HTML templates ───────────────────────────────────────────────────────────
 
-const HEAD = (metaTitle, metaDescription, slug, ogImage = '') => `<!DOCTYPE html>
-<html lang="es">
+const HEAD = (metaTitle, metaDescription, slug, ogImage = '', post = {}) => `<!DOCTYPE html>
+<html lang="es-AR">
 
 <!--------------------------------------------------------------------------------------------------------->
 <head>
@@ -158,6 +158,8 @@ const HEAD = (metaTitle, metaDescription, slug, ogImage = '') => `<!DOCTYPE html
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <!-- CANONICAL TAG -->
     <link rel="canonical" href="https://coverplus.com.ar/blog/${slug}"/>
+    <link rel="alternate" hreflang="es-AR" href="https://coverplus.com.ar/blog/${slug}" />
+    <link rel="alternate" hreflang="x-default" href="https://coverplus.com.ar/blog/${slug}" />
     <meta name="robots" content="index, follow">
     <title>${metaTitle}</title>
     <meta name="description" content="${metaDescription}">
@@ -165,6 +167,7 @@ const HEAD = (metaTitle, metaDescription, slug, ogImage = '') => `<!DOCTYPE html
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@cover.ar" />
     <meta name="twitter:title" content="${metaTitle}" />
+    <meta property="og:type" content="article" />
     <meta property="og:url" content="https://coverplus.com.ar/blog/${slug}" />
     <meta property="og:description" content="${metaDescription}" />
     <meta property="og:image" content="${ogImage}" />
@@ -201,6 +204,49 @@ const HEAD = (metaTitle, metaDescription, slug, ogImage = '') => `<!DOCTYPE html
 
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/09674008a9.js" crossorigin="anonymous"></script>
+
+    <!-- Schema: Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "${metaTitle}",
+      "description": "${metaDescription}",
+      "image": "${ogImage}",
+      "datePublished": "${post.publishedDate || ''}",
+      "dateModified": "${post.publishedDate || ''}",
+      "author": {
+        "@type": "Person",
+        "name": "${post.author || 'Gonzalo Domínguez'}",
+        "jobTitle": "Productor Asesor de Seguros"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Cover+",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://coverplus.com.ar/assets/img/c-header-new.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://coverplus.com.ar/blog/${slug}"
+      }
+    }
+    </script>
+
+    <!-- Schema: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://coverplus.com.ar/" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://coverplus.com.ar/blog" },
+        { "@type": "ListItem", "position": 3, "name": "${metaTitle}", "item": "https://coverplus.com.ar/blog/${slug}" }
+      ]
+    }
+    </script>
 
 </head>`;
 
@@ -318,7 +364,7 @@ function generatePostHtml(post) {
   const mobileImg = post.heroImageMobileUrl || '';
 
   return [
-    HEAD(post.metaTitle, post.metaDescription, post.slug, desktopImg),
+    HEAD(post.metaTitle, post.metaDescription, post.slug, desktopImg, post),
     BODY_OPEN(),
     `
     <section class="article-container">
@@ -361,13 +407,15 @@ function generateIndexHtml(posts) {
   }).join('\n');
 
   return `<!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR">
 
 <!--------------------------------------------------------------------------------------------------------->
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link rel="canonical" href="https://coverplus.com.ar/blog/"/>
+    <link rel="alternate" hreflang="es-AR" href="https://coverplus.com.ar/blog/" />
+    <link rel="alternate" hreflang="x-default" href="https://coverplus.com.ar/blog/" />
     <meta name="robots" content="index, follow">
     <title>Todo lo Que Tenés Que Saber Sobre Seguros | Blog | Cover+</title>
     <meta name="description" content="Artículos informativos sobre seguros personalizados, consejos prácticos y novedades del sector para proteger lo que más valorás">
