@@ -1,5 +1,6 @@
 # Dependencias
 node_modules/
+package-lock.json
 
 # Archivos del sistema
 .DS_Store
@@ -16,3 +17,6 @@ Thumbs.db
 
 # Copias temporales
 index - copia.html
+
+# Contentful scripts
+scripts/.env

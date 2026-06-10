@@ -2,17 +2,29 @@
   RewriteEngine On
   RewriteBase /
 
-  # Redirección para el blog index
-  RewriteRule ^blog/?$ blog/index.html [L]
+  # ── 301s: old .html URLs → clean slugs ──────────────────────────────────────
+  RewriteRule ^blog/que-hacer-seguro-accidente-transito\.html$ /blog/que-hacer-seguro-accidente-transito [R=301,L]
+  RewriteRule ^blog/fraude-en-seguros-estrategias-efectivas\.html$ /blog/fraude-en-seguros-estrategias-efectivas [R=301,L]
+  RewriteRule ^blog/errores-comunes-al-elegir-seguro-auto\.html$ /blog/errores-comunes-al-elegir-seguro-auto [R=301,L]
+  RewriteRule ^blog/servicio-de-asistencia-aseguradoras\.html$ /blog/servicio-de-asistencia-aseguradoras [R=301,L]
+  RewriteRule ^blog/ranking-agosto25\.html$ /blog/ranking-ventas-autos-agosto-2025 [R=301,L]
+  RewriteRule ^blog/freelance-a-pymes\.html$ /blog/freelance-a-pymes-proteccion-de-tu-negocio [R=301,L]
 
-  # Slugs de artículos del blog
+  # ── Landing coberturas ───────────────────────────────────────────────────────
+  RewriteRule ^coberturas/auto/?$ coberturas/auto/index.html [L]
+  RewriteRule ^coberturas/hogar/?$ coberturas/hogar/index.html [L]
+  RewriteRule ^coberturas/moto/?$ coberturas/moto/index.html [L]
+
+  # ── FAQ page ─────────────────────────────────────────────────────────────────
+  RewriteRule ^faq/?$ faq/index.html [L]
+
+  # ── Clean slug → .html file ──────────────────────────────────────────────────
+  RewriteRule ^blog/?$ blog/index.html [L]
   RewriteRule ^blog/que-hacer-seguro-accidente-transito/?$ blog/que-hacer-seguro-accidente-transito.html [L]
   RewriteRule ^blog/fraude-en-seguros-estrategias-efectivas/?$ blog/fraude-en-seguros-estrategias-efectivas.html [L]
   RewriteRule ^blog/errores-comunes-al-elegir-seguro-auto/?$ blog/errores-comunes-al-elegir-seguro-auto.html [L]
   RewriteRule ^blog/servicio-de-asistencia-aseguradoras/?$ blog/servicio-de-asistencia-aseguradoras.html [L]
+  RewriteRule ^blog/ranking-ventas-autos-agosto-2025/?$ blog/ranking-ventas-autos-agosto-2025.html [L]
+  RewriteRule ^blog/freelance-a-pymes-proteccion-de-tu-negocio/?$ blog/freelance-a-pymes-proteccion-de-tu-negocio.html [L]
 
-  # Opcional: redireccionar .html a ruta limpia
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^(.+)/$ /$1.html [L]
 </IfModule>
