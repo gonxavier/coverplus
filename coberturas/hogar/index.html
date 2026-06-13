@@ -32,6 +32,7 @@
   <link href="../../assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="../../assets/css/main.css" rel="stylesheet">
   <link href="../../assets/css/estilos-propios.css" rel="stylesheet">
+  <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="../../assets/css/landing-cobertura.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/09674008a9.js" crossorigin="anonymous"></script>
 
@@ -111,8 +112,14 @@
         <ul>
           <li><a href="/">Inicio</a></li>
           <li><a href="/#alt-features">Servicios</a></li>
-          <li><a href="/coberturas" class="active">Coberturas</a></li>
-          <li><a href="/blog">Blog</a></li>
+          <li class="dropdown"><a href="/coberturas/" class="active"><span>Coberturas</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="/coberturas/auto">Auto</a></li>
+            <li><a href="/coberturas/hogar">Hogar</a></li>
+            <li><a href="/coberturas/moto">Moto</a></li>
+          </ul>
+        </li>
+          <li><a href="/blog/">Blog</a></li>
           <li><a href="/faq">Preguntas Frecuentes</a></li>
           <li><a href="/contacto">Contacto</a></li>
         </ul>
@@ -140,19 +147,7 @@
       </div>
     </section>
 
-    <!-- TRUST LOGOS -->
-    <section class="trust-logos text-center">
-      <div class="container">
-        <p>Trabajamos con las principales aseguradoras del país</p>
-        <div class="d-flex flex-wrap justify-content-center align-items-center">
-          <img src="/assets/img/aseguradoras/ot/allianz-logo.svg" alt="Allianz">
-          <img src="/assets/img/aseguradoras/ot/san cristobal.svg" alt="San Cristóbal">
-          <img src="/assets/img/aseguradoras/ot/Berkley.svg" alt="Berkley">
-          <img src="/assets/img/aseguradoras/ot/gss.svg" alt="GSS">
-          <img src="/assets/img/aseguradoras/ot/asociart.svg" alt="Asociart">
-        </div>
-      </div>
-    </section>
+    <div data-component="logos-carousel"></div>
 
     <!-- WHY ASESOR -->
     <section class="why-asesor text-center">
@@ -257,7 +252,7 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="/" class="d-flex align-items-center">
-            <img src="/assets/img/c-header-new.png" alt="" width="150px">
+            <img src="/assets/img/c-header-new.png" alt="Logo de Cover+, asesoramiento en seguros personalizado y digital" width="150px">
           </a>
           <div class="footer-contact pt-3">
             <p>Av. Santa Fe 768</p>
@@ -271,7 +266,7 @@
             <li><i class="bi bi-chevron-right"></i> <a href="/coberturas/auto">Seguro de Auto</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="/coberturas/hogar">Seguro del Hogar</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="/coberturas/moto">Seguro de Moto</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="/coberturas">Ver todas</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="/coberturas/">Ver todas</a></li>
           </ul>
         </div>
         <div class="col-lg-2 col-md-3 footer-links">
@@ -301,6 +296,8 @@
   <div id="preloader"></div>
   <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../../assets/vendor/aos/aos.js"></script>
+  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="../../assets/js/main.js"></script>
+  <script src="../../assets/js/components.js"></script>
 </body>
 </html>

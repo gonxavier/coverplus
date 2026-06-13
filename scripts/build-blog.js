@@ -268,15 +268,21 @@ const BODY_OPEN = () => `
         <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
         <a href="/" class="logo d-flex align-items-center me-auto">
-            <img src="/assets/img/c-header-new.png" alt="">
+            <img src="/assets/img/c-header-new.png" alt="Logo de Cover+, asesoramiento en seguros personalizado y digital">
         </a>
 
         <nav id="navmenu" class="navmenu">
             <ul>
               <li><a href="/">Inicio</a></li>
               <li><a href="/#alt-features">Servicios</a></li>
-              <li><a href="/coberturas">Coberturas</a></li>
-              <li><a href="/blog">Blog</a></li>
+              <li class="dropdown"><a href="/coberturas/"><span>Coberturas</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="/coberturas/auto">Auto</a></li>
+                  <li><a href="/coberturas/hogar">Hogar</a></li>
+                  <li><a href="/coberturas/moto">Moto</a></li>
+                </ul>
+              </li>
+              <li><a href="/blog/">Blog</a></li>
               <li><a href="/#faq-2">Preguntas Frecuentes</a></li>
               <li><a href="/contacto">Contacto</a></li>
             </ul>
@@ -297,7 +303,7 @@ const FOOTER = () => `
         <div class="row gy-4">
             <div class="col-lg-4 col-md-6 footer-about">
             <a href="/" class="d-flex align-items-center">
-            <img src="/assets/img/c-header-new.png" alt="" width="150px">
+            <img src="/assets/img/c-header-new.png" alt="Logo de Cover+, asesoramiento en seguros personalizado y digital" width="150px">
             </a>
             <div class="footer-contact pt-3">
             <p>Av. Santa Fe 768</p>
@@ -461,14 +467,20 @@ function generateIndexHtml(posts) {
     <header id="header" class="header d-flex align-items-center fixed-top">
         <div class="container-fluid container-xl position-relative d-flex align-items-center">
         <a href="/" class="logo d-flex align-items-center me-auto">
-            <img src="/assets/img/c-header-new.png" alt="">
+            <img src="/assets/img/c-header-new.png" alt="Logo de Cover+, asesoramiento en seguros personalizado y digital">
         </a>
         <nav id="navmenu" class="navmenu">
             <ul>
               <li><a href="/">Inicio</a></li>
               <li><a href="/#alt-features">Servicios</a></li>
-              <li><a href="/coberturas">Coberturas</a></li>
-              <li><a href="/blog">Blog</a></li>
+              <li class="dropdown"><a href="/coberturas/"><span>Coberturas</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="/coberturas/auto">Auto</a></li>
+                  <li><a href="/coberturas/hogar">Hogar</a></li>
+                  <li><a href="/coberturas/moto">Moto</a></li>
+                </ul>
+              </li>
+              <li><a href="/blog/">Blog</a></li>
               <li><a href="/#faq-2">Preguntas Frecuentes</a></li>
               <li><a href="/contacto">Contacto</a></li>
             </ul>
@@ -490,7 +502,7 @@ function generateIndexHtml(posts) {
             <div class="row gy-4">
                 <div class="col-lg-4 col-md-6 footer-about">
                 <a href="/" class="d-flex align-items-center">
-                <img src="/assets/img/c-header-new.png" alt="" width="150px">
+                <img src="/assets/img/c-header-new.png" alt="Logo de Cover+, asesoramiento en seguros personalizado y digital" width="150px">
                 </a>
                 <div class="footer-contact pt-3">
                 <p>Av. Santa Fe 768</p>
