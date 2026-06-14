@@ -264,35 +264,9 @@ const BODY_OPEN = () => `
     </a><!-- /WP ICON -->
 
 <!--------------------------------------------------------------------------------------------------------->
-    <header id="header" class="header d-flex align-items-center fixed-top">
-        <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-        <a href="/" class="logo d-flex align-items-center me-auto">
-            <img src="/assets/img/c-header-new.png" alt="Logo de Cover+, asesoramiento en seguros personalizado y digital">
-        </a>
+<div data-component="header"></div>
 
-        <nav id="navmenu" class="navmenu">
-            <ul>
-              <li><a href="/">Inicio</a></li>
-              <li><a href="/#alt-features">Servicios</a></li>
-              <li class="dropdown"><a href="/coberturas/"><span>Coberturas</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="/coberturas/auto">Auto</a></li>
-                  <li><a href="/coberturas/hogar">Hogar</a></li>
-                  <li><a href="/coberturas/moto">Moto</a></li>
-                </ul>
-              </li>
-              <li><a href="/blog/">Blog</a></li>
-              <li><a href="/#faq-2">Preguntas Frecuentes</a></li>
-              <li><a href="/contacto">Contacto</a></li>
-            </ul>
-            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
-
-        <a class="btn-getstarted" href="https://wa.me/5491140275158" target="_blank">Cotizá por WhatsApp</a>
-
-        </div>
-    </header>
 <!--------------------------------------------------------------------------------------------------------->`;
 
 const FOOTER = () => `
@@ -356,6 +330,7 @@ const FOOTER = () => `
 <div id="preloader"></div>
 
 <!-- Main JS File -->
+<script src="../assets/js/components.js"></script>
 <script src="../assets/js/main.js"></script>
 
 </body>
@@ -464,31 +439,7 @@ function generateIndexHtml(posts) {
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
-    <header id="header" class="header d-flex align-items-center fixed-top">
-        <div class="container-fluid container-xl position-relative d-flex align-items-center">
-        <a href="/" class="logo d-flex align-items-center me-auto">
-            <img src="/assets/img/c-header-new.png" alt="Logo de Cover+, asesoramiento en seguros personalizado y digital">
-        </a>
-        <nav id="navmenu" class="navmenu">
-            <ul>
-              <li><a href="/">Inicio</a></li>
-              <li><a href="/#alt-features">Servicios</a></li>
-              <li class="dropdown"><a href="/coberturas/"><span>Coberturas</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="/coberturas/auto">Auto</a></li>
-                  <li><a href="/coberturas/hogar">Hogar</a></li>
-                  <li><a href="/coberturas/moto">Moto</a></li>
-                </ul>
-              </li>
-              <li><a href="/blog/">Blog</a></li>
-              <li><a href="/#faq-2">Preguntas Frecuentes</a></li>
-              <li><a href="/contacto">Contacto</a></li>
-            </ul>
-            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
-        <a class="btn-getstarted" href="https://wa.me/5491140275158" target="_blank">Cotizá por WhatsApp</a>
-        </div>
-    </header>
+    <div data-component="header"></div>
 
     <main class="blog-container">
         <div class="blog-title"><h1>Todo lo Que Tenés Que Saber Sobre <strong>Seguros</strong></h1></div>
@@ -544,6 +495,7 @@ function generateIndexHtml(posts) {
 
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
     <div id="preloader"></div>
+    <script src="/assets/js/components.js"></script>
     <script src="/assets/js/main.js"></script>
 </body>
 </html>`;
