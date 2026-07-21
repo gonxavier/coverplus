@@ -8,13 +8,13 @@
   <link rel="alternate" hreflang="es-AR" href="https://coverplus.com.ar/coberturas/auto" />
   <link rel="alternate" hreflang="x-default" href="https://coverplus.com.ar/coberturas/auto" />
   <meta name="robots" content="index, follow">
-  <title>Seguro de Auto en Buenos Aires | Asesor Experto Sin Costo | Cover+</title>
+  <title>Seguro de Auto en Buenos Aires | Asesor Experto | Cover+</title>
   <meta name="description" content="Cotizá tu seguro de auto con un productor asesor que trabaja para vos. Comparamos entre múltiples aseguradoras y te acompañamos ante cualquier siniestro.">
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://coverplus.com.ar/coberturas/auto" />
   <meta property="og:title" content="Seguro de Auto en Buenos Aires | Asesor Experto Sin Costo | Cover+" />
   <meta property="og:description" content="Cotizá tu seguro de auto con un productor asesor que trabaja para vos. Sin costo extra, múltiples aseguradoras, acompañamiento real ante siniestros." />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1200&q=80" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=1200&q=80" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Seguro de Auto en Buenos Aires | Asesor Experto | Cover+" />
 
@@ -33,6 +33,7 @@
   <link href="../../assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="../../assets/css/main.css" rel="stylesheet">
   <link href="../../assets/css/estilos-propios.css" rel="stylesheet">
+  <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="../../assets/css/landing-cobertura.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/09674008a9.js" crossorigin="anonymous"></script>
 
@@ -78,18 +79,23 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "¿Qué diferencia hay entre seguro de terceros y todo riesgo para el auto?",
-        "acceptedAnswer": { "@type": "Answer", "text": "El seguro de terceros cubre los daños que le causás a otras personas o sus vehículos. El todo riesgo además cubre los daños a tu propio auto, robo total o parcial, granizo e incendio. La diferencia de precio puede valer la pena según el valor de tu vehículo." }
+        "name": "¿Qué diferencia hay entre el seguro obligatorio y un todo riesgo?",
+        "acceptedAnswer": { "@type": "Answer", "text": "El seguro obligatorio solo cubre daños a terceros, mientras que el todo riesgo protege también tu auto ante casi cualquier imprevisto. En el medio existen muchas opciones con distintos precios y alcances. Tu asesor te ayuda a elegir la que más te conviene." }
       },
       {
         "@type": "Question",
         "name": "¿Cuánto sale el seguro de auto en Argentina?",
-        "acceptedAnswer": { "@type": "Answer", "text": "El valor depende del modelo del vehículo, el año, la zona donde está radicado y el tipo de cobertura elegida. Un asesor puede comparar entre múltiples aseguradoras para encontrar la mejor relación precio-cobertura para tu caso puntual." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Depende de varios factores como el modelo, el año, la edad del conductor, la zona de radicación y el tipo de cobertura. Un asesor compara entre múltiples aseguradoras para encontrar la mejor relación precio-cobertura para tu caso." }
       },
       {
         "@type": "Question",
-        "name": "¿Puedo contratar el seguro de auto de forma online?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Sí. Con Cover+ podés cotizar y contratar tu seguro de auto de forma completamente digital a través de WhatsApp. El asesor te guía en todo el proceso y te envía la documentación por correo electrónico." }
+        "name": "¿Puedo contratar de forma online?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sí. Con Cover+ te asesorás, cotizás y contratás por WhatsApp. El asesor te guía en todo el proceso y la documentación te llega en forma digital a tu teléfono y/o correo electrónico." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué pasa si no pago la cuota del seguro?",
+        "acceptedAnswer": { "@type": "Answer", "text": "La cobertura se suspende automáticamente cuando vence esa cuota. Si tenés un siniestro en ese período, la aseguradora puede rechazar el reclamo. Al regularizar el pago, la cobertura se reactiva a las 0 hs del día siguiente." }
       }
     ]
   }
@@ -103,83 +109,52 @@
     <i class="fa-brands fa-whatsapp"></i>
   </a>
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
-      <a href="/" class="logo d-flex align-items-center me-auto">
-        <img src="/assets/img/c-header-new.png" alt="Cover+">
-      </a>
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="/">Inicio</a></li>
-          <li><a href="/#alt-features">Servicios</a></li>
-          <li><a href="/coberturas" class="active">Coberturas</a></li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/faq">Preguntas Frecuentes</a></li>
-          <li><a href="/contacto">Contacto</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-      <a class="btn-getstarted" href="https://wa.me/5491140275158" target="_blank">Cotizá por WhatsApp</a>
-    </div>
-  </header>
+  <div data-component="header"></div>
 
   <main>
 
     <!-- HERO -->
     <section class="landing-hero">
-      <div class="landing-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1400&q=80');"></div>
+      <div class="landing-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1555215695-3004980ad54e?w=1400&q=80');"></div>
       <div class="container">
         <div class="landing-hero__content">
-          <span class="landing-hero__eyebrow">Seguro de Auto · Buenos Aires</span>
-          <h1>Cotizá tu Seguro de Auto<br>con un Asesor que Trabaja Para Vos</h1>
-          <p class="landing-hero__subtitle">No te vendemos el seguro más barato — te asesoramos para que elijas el mejor. Comparamos entre múltiples aseguradoras y te acompañamos si tenés un siniestro.</p>
+          <span class="landing-hero__eyebrow">Seguro de Auto</span>
+          <h1>El Seguro de Auto que Necesitás,<br>con un Asesor a tu Lado</h1>
+          <p class="landing-hero__subtitle">Comparamos aseguradoras y te explicamos la letra chica. Buscamos la mejor opción y te acompañamos si tenés un siniestro.</p>
           <a href="https://wa.me/5491140275158" target="_blank" class="btn-cta">
-            <i class="fa-brands fa-whatsapp"></i> Cotizá ahora por WhatsApp
+            <i class="fa-brands fa-whatsapp"></i> Cotizá Ahora por WhatsApp
           </a>
-          <a href="/faq" class="btn-secondary-cta">Preguntas frecuentes</a>
         </div>
       </div>
     </section>
 
-    <!-- TRUST LOGOS -->
-    <section class="trust-logos text-center">
-      <div class="container">
-        <p>Trabajamos con las principales aseguradoras del país</p>
-        <div class="d-flex flex-wrap justify-content-center align-items-center">
-          <img src="/assets/img/aseguradoras/ot/allianz-logo.svg" alt="Allianz">
-          <img src="/assets/img/aseguradoras/ot/san cristobal.svg" alt="San Cristóbal">
-          <img src="/assets/img/aseguradoras/ot/Berkley.svg" alt="Berkley">
-          <img src="/assets/img/aseguradoras/ot/gss.svg" alt="GSS">
-          <img src="/assets/img/aseguradoras/ot/asociart.svg" alt="Asociart">
-        </div>
-      </div>
-    </section>
+    <div data-component="logos-carousel"></div>
 
     <!-- WHY ASESOR -->
     <section class="why-asesor text-center">
       <div class="container">
         <h2>¿Por qué cotizar con un asesor y no directo con la aseguradora?</h2>
-        <p class="section-lead">El contrato de seguros es complejo. Tener un profesional de tu lado cambia todo — antes, durante y después del siniestro.</p>
+        <p class="section-lead">Las pólizas de seguro son complejas. Tener un profesional de tu lado marca la diferencia, antes, durante y después de un siniestro.</p>
         <div class="row g-4 text-start">
           <div class="col-md-4" data-aos="fade-up">
             <div class="pillar-card">
               <div class="pillar-card__icon"><i class="bi bi-building-check"></i></div>
-              <h3>Múltiples aseguradoras, una sola llamada</h3>
+              <h3>Te ayudamos a elegir</h3>
               <p>Comparamos tu caso entre las principales compañías del mercado y te presentamos las opciones más convenientes para tu vehículo y zona.</p>
             </div>
           </div>
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
             <div class="pillar-card">
               <div class="pillar-card__icon"><i class="bi bi-currency-dollar"></i></div>
-              <h3>Sin costo adicional para vos</h3>
-              <p>El servicio de asesoramiento es completamente gratuito. La aseguradora paga la comisión del productor — vos no pagás nada extra.</p>
+              <h3>Sin costo adicional</h3>
+              <p>Nuestro asesoramiento lo contemplan las aseguradoras en sus costos comerciales, así tengas un asesor de tu lado o no. Vos no pagás nada extra.</p>
             </div>
           </div>
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
             <div class="pillar-card">
               <div class="pillar-card__icon"><i class="bi bi-shield-check"></i></div>
               <h3>Te acompañamos si tenés un siniestro</h3>
-              <p>No quedás solo. Cuando lo necesitás, tu asesor te guía en la denuncia, negocia con la aseguradora y hace seguimiento hasta que se resuelva.</p>
+              <p>Nunca te dejamos solo. Te guiamos desde la denuncia y seguimos el caso hasta su resolución, verificando que se cumpla lo pactado en tu póliza.</p>
             </div>
           </div>
         </div>
@@ -193,19 +168,17 @@
           <div class="col-lg-6" data-aos="fade-right">
             <h2>¿Qué cubre el seguro de auto?</h2>
             <ul class="coverage-list">
-              <li><i class="bi bi-check-circle-fill"></i><span><strong>Responsabilidad civil</strong> — daños a terceros, personas y vehículos (obligatorio por ley)</span></li>
-              <li><i class="bi bi-check-circle-fill"></i><span><strong>Robo y hurto total</strong> — cobertura si te roban el vehículo</span></li>
-              <li><i class="bi bi-check-circle-fill"></i><span><strong>Daños parciales</strong> — robo de partes, cristales, accesorios</span></li>
-              <li><i class="bi bi-check-circle-fill"></i><span><strong>Daños propios por accidente</strong> — cobertura de tu vehículo en choques</span></li>
-              <li><i class="bi bi-check-circle-fill"></i><span><strong>Incendio total y parcial</strong></span></li>
-              <li><i class="bi bi-check-circle-fill"></i><span><strong>Granizo</strong> — daños por fenómenos climáticos</span></li>
-              <li><i class="bi bi-check-circle-fill"></i><span><strong>Asistencia en ruta</strong> — grúa, auxilio mecánico, cambio de neumáticos</span></li>
-              <li><i class="bi bi-check-circle-fill"></i><span><strong>Auto de reemplazo</strong> — disponible en algunas pólizas</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span><strong>Responsabilidad civil</strong> — el seguro obligatorio por ley. Te protege ante reclamos por daños causados a otras personas, vehículos o propiedades.</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span><strong>Robo total y/o parcial</strong> — cubre el robo del vehículo completo o de sus componentes de fábrica.</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span><strong>Incendio total y/o parcial</strong> — respaldo si el auto sufre daños por fuego, ya sea parcial o a la totalidad de la unidad.</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span><strong>Accidente total</strong> — cobertura en caso de un accidente donde el costo de reparación constituye una destrucción total.</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span><strong>Daños parciales</strong> — cubre los arreglos y reparaciones menores que necesite tu auto después de un choque o accidente.</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span><strong>Adicionales a tu medida</strong> — protección específica para cristales, granizo, cerraduras, inundación, robo de ruedas y coberturas especiales para accesorios extra.</span></li>
             </ul>
             <p class="mt-3" style="color:#666; font-size:0.9rem;">* La cobertura exacta varía según la póliza elegida. Tu asesor te explica cada opción antes de firmar.</p>
           </div>
           <div class="col-lg-6" data-aos="fade-left">
-            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80" alt="Seguro de auto — protección para tu vehículo" class="coverage-img" loading="lazy">
+            <img src="../../assets/img/audi_a4_interior.webp" alt="Interior de auto de lujo — Seguro de auto Cover+" class="coverage-img" loading="lazy">
           </div>
         </div>
       </div>
@@ -214,24 +187,24 @@
     <!-- MINI FAQ -->
     <section class="landing-faq">
       <div class="container">
-        <h2 class="text-center">Preguntas frecuentes sobre el seguro de auto</h2>
+        <h2 class="text-center">Preguntas frecuentes sobre seguros de auto</h2>
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="faq-simple-item">
-              <h3>¿Qué diferencia hay entre terceros y todo riesgo?</h3>
-              <p>El terceros cubre los daños que le causás a otros. El todo riesgo también cubre tu propio vehículo ante accidentes, robo, granizo e incendio. La diferencia de precio puede valer la pena según el valor de tu auto.</p>
+              <h3>¿Qué diferencia hay entre el seguro obligatorio y un todo riesgo?</h3>
+              <p>El seguro obligatorio solo cubre daños a terceros, mientras que el todo riesgo protege también tu auto ante casi cualquier imprevisto. En el medio existen muchas opciones con distintos precios y alcances. Tu asesor te ayuda a elegir la que más te conviene.</p>
             </div>
             <div class="faq-simple-item">
               <h3>¿Cuánto sale el seguro de auto en Argentina?</h3>
-              <p>Depende del modelo, año, zona de radicación y tipo de cobertura. Un asesor compara entre múltiples aseguradoras para encontrar la mejor relación precio-cobertura para tu caso.</p>
+              <p>Depende de varios factores como el modelo, el año, la edad del conductor, la zona de radicación y el tipo de cobertura. Un asesor compara entre múltiples aseguradoras para encontrar la mejor relación precio-cobertura para tu caso.</p>
             </div>
             <div class="faq-simple-item">
               <h3>¿Puedo contratar de forma online?</h3>
-              <p>Sí. Con Cover+ cotizás y contratás por WhatsApp. El asesor te guía en todo el proceso y la documentación te llega por correo electrónico.</p>
+              <p>Sí. Con Cover+ te asesorás, cotizás y contratás por WhatsApp. El asesor te guía en todo el proceso y la documentación te llega en forma digital a tu teléfono y/o correo electrónico.</p>
             </div>
             <div class="faq-simple-item">
               <h3>¿Qué pasa si no pago la cuota del seguro?</h3>
-              <p>La cobertura se suspende automáticamente. Si tenés un siniestro en ese período, no estás cubierto. Al pagar, la cobertura se reactiva a las 0:00 hs del día siguiente.</p>
+              <p>La cobertura se suspende automáticamente cuando vence esa cuota. Si tenés un siniestro en ese período, la aseguradora puede rechazar el reclamo. Al regularizar el pago, la cobertura se reactiva a las 0 hs del día siguiente.</p>
             </div>
           </div>
         </div>
@@ -244,65 +217,24 @@
     <!-- CTA BAND -->
     <section class="landing-cta-band">
       <div class="container">
-        <h2>¿Listo para proteger tu auto?</h2>
+        <h2>¿Listo para proteger+ tu auto?</h2>
         <p>Cotizá ahora sin compromiso. Tu asesor te responde en minutos.</p>
         <a href="https://wa.me/5491140275158" target="_blank" class="btn-cta">
-          <i class="fa-brands fa-whatsapp"></i> Cotizar mi seguro de auto
+          <i class="fa-brands fa-whatsapp"></i> Cotizar Mi Seguro de Auto
         </a>
       </div>
     </section>
 
   </main>
 
-  <footer id="footer" class="footer">
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="/" class="d-flex align-items-center">
-            <img src="/assets/img/c-header-new.png" alt="" width="150px">
-          </a>
-          <div class="footer-contact pt-3">
-            <p>Av. Santa Fe 768</p>
-            <p>1059 - Ciudad Autónoma de Buenos Aires</p>
-            <p><strong>Email:</strong> <span>info@coverplus.com.ar</span></p>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Coberturas</h4>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="/coberturas/auto">Seguro de Auto</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="/coberturas/hogar">Seguro del Hogar</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="/coberturas/moto">Seguro de Moto</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="/coberturas">Ver todas</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Links de Interés</h4>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="https://www.argentina.gob.ar/superintendencia-de-seguros" rel="noopener noreferrer" target="_blank">SSN</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="https://www.ssn.gob.ar/storage/registros/productores/productoresactivosfiltro.asp" rel="noopener noreferrer" target="_blank">Consulta de Matrícula</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="/faq">Preguntas Frecuentes</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-12">
-          <h4>Seguinos en redes</h4>
-          <p>Para estar al día de todas las novedades</p>
-          <div class="social-links d-flex">
-            <a href="https://www.instagram.com/coverplus.ar/" target="_blank" aria-label="Instagram de Cover+"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.linkedin.com/company/coverplusar/" target="_blank" aria-label="LinkedIn de Cover+"><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Gonzalo Javier Domínguez</strong> <br> <span>Productor Asesor de Seguros (Mat SSN N°: 93065)</span></p>
-    </div>
-  </footer>
+  <div data-component="footer"></div>
 
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <div id="preloader"></div>
   <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../../assets/vendor/aos/aos.js"></script>
+  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../../assets/js/components.js"></script>
   <script src="../../assets/js/main.js"></script>
 </body>
 </html>
