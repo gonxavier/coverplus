@@ -4,6 +4,9 @@ on:
   repository_dispatch:
     types: [contentful-publish]
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
