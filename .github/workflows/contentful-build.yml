@@ -3,6 +3,7 @@ name: Build Blog from Contentful
 on:
   repository_dispatch:
     types: [contentful-publish]
+  workflow_dispatch:
 
 permissions:
   contents: write
