@@ -58,10 +58,12 @@
   gap: 0.5rem;
   background: #25d366;
   color: #fff;
-  font-weight: 600;
+  font-family: var(--heading-font);
+  font-weight: 500;
   font-size: 1rem;
+  letter-spacing: 1px;
   padding: 0.85rem 2rem;
-  border-radius: 4px;
+  border-radius: 50px;
   text-decoration: none;
   transition: background 0.2s;
 }
@@ -162,7 +164,7 @@
 
 .coverage-list li {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 0.75rem;
   padding: 0.85rem 0;
   border-bottom: 1px solid #eee;
@@ -174,9 +176,8 @@
 }
 
 .coverage-list li i {
-  color: #f0b429;
+  color: var(--accent-color);
   font-size: 1.1rem;
-  margin-top: 2px;
   flex-shrink: 0;
 }
 
@@ -248,10 +249,12 @@
   gap: 0.5rem;
   background: #25d366;
   color: #fff;
-  font-weight: 600;
+  font-family: var(--heading-font);
+  font-weight: 500;
   font-size: 1.05rem;
+  letter-spacing: 1px;
   padding: 0.9rem 2.25rem;
-  border-radius: 4px;
+  border-radius: 50px;
   text-decoration: none;
   transition: background 0.2s;
 }
