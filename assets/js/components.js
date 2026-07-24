@@ -59,12 +59,10 @@
 
   /* ── Logos Carousel ──────────────────────────────────────────────────────── */
   const LOGOS_HTML = `
-    <section class="clients section">
-      <div class="container section-title text-center" data-aos="fade-up">
-        <h2>Trabajamos con las principales aseguradoras del país</h2>
-      </div>
+    <section id="clients-component" class="clients section">
       <div class="container">
-        <div class="swiper clients-swiper">
+        <h2 class="clients-label">Trabajamos con las principales aseguradoras del país</h2>
+        <div class="swiper">
           <script type="application/json" class="swiper-config">
             {
               "loop": true,
@@ -98,6 +96,7 @@
             <div class="swiper-slide"><img src="/assets/img/aseguradoras/ot/asociart.svg" class="img-fluid" alt="Logo de la aseguradora Asociart" loading="lazy"></div>
             <div class="swiper-slide"><img src="/assets/img/aseguradoras/ot/Berkley.svg" class="img-fluid" alt="Logo de la aseguradora Berkley" loading="lazy"></div>
             <div class="swiper-slide"><img src="/assets/img/aseguradoras/ot/rus.svg" class="img-fluid" alt="Logo de la aseguradora Río Uruguay Seguros" loading="lazy"></div>
+            <div class="swiper-slide"><img src="/assets/img/aseguradoras/ot/allianz-logo.svg" class="img-fluid" alt="Logo de la aseguradora Allianz" loading="lazy"></div>
           </div>
         </div>
       </div>
@@ -145,14 +144,71 @@
     });
   }
 
+  /* ── Footer ─────────────────────────────────────────────────────────────── */
+  const FOOTER_HTML = `
+    <footer id="footer" class="footer">
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="/" class="d-flex align-items-center">
+              <img src="/assets/img/c-header-new.png" alt="Logo de Cover+, asesoramiento en seguros personalizado y digital" width="150px">
+            </a>
+            <div class="footer-contact pt-3">
+              <p>Av. Santa Fe 768</p>
+              <p>1059 - Ciudad Autónoma de Buenos Aires</p>
+              <p><strong>Email:</strong> <span>info@coverplus.com.ar</span></p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Coberturas</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="/coberturas/auto">Seguro de Auto</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="/coberturas/hogar">Seguro de Hogar</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="/coberturas/moto">Seguro de Moto</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="/coberturas/">Ver todas</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Links de Interés</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://www.argentina.gob.ar/superintendencia-de-seguros" rel="noopener noreferrer" target="_blank">SSN</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://www.ssn.gob.ar/storage/registros/productores/productoresactivosfiltro.asp" rel="noopener noreferrer" target="_blank">Consulta de Matrícula</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="/faq">Preguntas Frecuentes</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <h4>Seguinos en redes</h4>
+            <p>Para estar al día de todas las novedades</p>
+            <div class="social-links d-flex">
+              <a href="https://www.instagram.com/coverplus.ar/" target="_blank" aria-label="Instagram de Cover+"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/coverplusar/" target="_blank" aria-label="LinkedIn de Cover+"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container copyright text-center mt-4">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Gonzalo Javier Domínguez</strong> <br> <span>Productor Asesor de Seguros (Mat SSN N°: 93065)</span></p>
+      </div>
+    </footer>`;
+
+  function mountFooter() {
+    document.querySelectorAll('[data-component="footer"]').forEach(function (el) {
+      const tmp = document.createElement('div');
+      tmp.innerHTML = FOOTER_HTML;
+      el.replaceWith(tmp.firstElementChild);
+    });
+  }
+
   // Run after Swiper is available (window load), or immediately if already loaded
   if (document.readyState === 'complete') {
     mountLogosCarousel();
     mountCTA();
+    mountFooter();
   } else {
     window.addEventListener('load', function () {
       mountLogosCarousel();
       mountCTA();
+      mountFooter();
     });
   }
 

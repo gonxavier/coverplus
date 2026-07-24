@@ -12,7 +12,7 @@
  *   DELIVERY_TOKEN   ← Contentful Delivery API token (read-only, public)
  */
 
-require('dotenv').config({ path: __dirname + '/.env' });
+try { require('dotenv').config({ path: __dirname + '/.env' }); } catch (e) {}
 const fs = require('fs');
 const path = require('path');
 
