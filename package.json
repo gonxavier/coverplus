@@ -1,5 +1,9 @@
 {
   "devDependencies": {
     "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "contentful-management": "^12.5.1",
+    "dotenv": "^17.4.2"
   }
 }
