@@ -58,31 +58,26 @@
   mountHeader();
 
   /* ── Logos Carousel ──────────────────────────────────────────────────────── */
+  var SWIPER_CONFIG = {
+    loop: true,
+    speed: 600,
+    autoplay: { delay: 5000 },
+    slidesPerView: 'auto',
+    pagination: { el: '.swiper-pagination', type: 'bullets', clickable: true },
+    breakpoints: {
+      320: { slidesPerView: 2, spaceBetween: 40 },
+      480: { slidesPerView: 3, spaceBetween: 60 },
+      640: { slidesPerView: 4, spaceBetween: 80 },
+      992: { slidesPerView: 5, spaceBetween: 120 },
+      1200: { slidesPerView: 6, spaceBetween: 120 }
+    }
+  };
+
   const LOGOS_HTML = `
     <section id="clients-component" class="clients section">
       <div class="container">
         <h2 class="clients-label">Trabajamos con las principales aseguradoras del país</h2>
         <div class="swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": { "delay": 5000 },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": { "slidesPerView": 2, "spaceBetween": 40 },
-                "480": { "slidesPerView": 3, "spaceBetween": 60 },
-                "640": { "slidesPerView": 4, "spaceBetween": 80 },
-                "992": { "slidesPerView": 5, "spaceBetween": 120 },
-                "1200": { "slidesPerView": 6, "spaceBetween": 120 }
-              }
-            }
-          <\/script>
           <div class="swiper-wrapper align-items-center">
             <div class="swiper-slide"><img src="/assets/img/aseguradoras/ot/allianz-logo.svg" class="img-fluid" alt="Logo de la aseguradora Allianz" loading="lazy"></div>
             <div class="swiper-slide"><img src="/assets/img/aseguradoras/ot/gss.svg" class="img-fluid" alt="Logo de la aseguradora GSS" loading="lazy"></div>
@@ -113,8 +108,7 @@
       // Init Swiper on the newly injected element
       const swiperEl = section.querySelector('.swiper');
       if (swiperEl && window.Swiper) {
-        const config = JSON.parse(swiperEl.querySelector('.swiper-config').textContent.trim());
-        new window.Swiper(swiperEl, config);
+        new window.Swiper(swiperEl, SWIPER_CONFIG);
       }
     });
   }
@@ -199,17 +193,16 @@
     });
   }
 
-  // Run after Swiper is available (window load), or immediately if already loaded
+  function runMounts() {
+    try { mountLogosCarousel(); } catch(e) { console.error('mountLogosCarousel failed', e); }
+    try { mountCTA(); } catch(e) { console.error('mountCTA failed', e); }
+    try { mountFooter(); } catch(e) { console.error('mountFooter failed', e); }
+  }
+
   if (document.readyState === 'complete') {
-    mountLogosCarousel();
-    mountCTA();
-    mountFooter();
+    runMounts();
   } else {
-    window.addEventListener('load', function () {
-      mountLogosCarousel();
-      mountCTA();
-      mountFooter();
-    });
+    window.addEventListener('load', runMounts);
   }
 
 })();
