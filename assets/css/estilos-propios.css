@@ -91,7 +91,7 @@
 }
 
 /* CLIENTS LABEL — elegant eyebrow heading for the logos carousel component */
-h2.clients-label {
+.clients h2.clients-label {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,10 +103,11 @@ h2.clients-label {
     color: color-mix(in srgb, var(--default-color), transparent 45%);
     margin-bottom: 32px;
     padding-bottom: 0;
+    position: static;
 }
 
-h2.clients-label::before,
-h2.clients-label::after {
+.clients h2.clients-label::before,
+.clients h2.clients-label::after {
     content: "";
     flex: 1;
     max-width: 80px;
@@ -115,4 +116,8 @@ h2.clients-label::after {
     position: static;
     display: block;
     width: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    margin: 0;
 }

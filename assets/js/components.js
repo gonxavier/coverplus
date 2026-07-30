@@ -105,10 +105,13 @@
       const section = tmp.firstElementChild;
       el.replaceWith(section);
 
-      // Init Swiper on the newly injected element
+      // Init Swiper on the newly injected element — defer one frame so the
+      // browser has computed layout before Swiper measures container width
       const swiperEl = section.querySelector('.swiper');
       if (swiperEl && window.Swiper) {
-        new window.Swiper(swiperEl, SWIPER_CONFIG);
+        requestAnimationFrame(function() {
+          new window.Swiper(swiperEl, SWIPER_CONFIG);
+        });
       }
     });
   }
