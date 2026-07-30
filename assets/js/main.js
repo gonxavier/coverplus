@@ -116,7 +116,9 @@
    */
   function initSwiper() {
     document.querySelectorAll('.swiper').forEach(function(swiper) {
-      let config = JSON.parse(swiper.querySelector('.swiper-config').innerHTML.trim());
+      const configEl = swiper.querySelector('.swiper-config');
+      if (!configEl) return;
+      let config = JSON.parse(configEl.innerHTML.trim());
       new Swiper(swiper, config);
     });
   }
