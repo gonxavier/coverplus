@@ -121,3 +121,10 @@
     right: auto;
     margin: 0;
 }
+
+/* Normalize logo heights inside the carousel */
+.clients .swiper-slide img {
+    max-height: 48px;
+    width: auto;
+    object-fit: contain;
+}
