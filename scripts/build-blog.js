@@ -142,7 +142,7 @@ function escapeHtml(str) {
 // ─── Date formatter ───────────────────────────────────────────────────────────
 
 function formatDateEs(isoDate) {
-  const [year, month, day] = isoDate.split('-').map(Number);
+  const [year, month, day] = isoDate.split('T')[0].split('-').map(Number);
   const months = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
   return `${day} de ${months[month - 1]} de ${year}`;
 }
