@@ -18,13 +18,8 @@
   # ── FAQ page ─────────────────────────────────────────────────────────────────
   RewriteRule ^faq/?$ faq/index.html [L]
 
-  # ── Clean slug → .html file ──────────────────────────────────────────────────
+  # ── Clean slug → .html file (generic — covers all current and future posts) ──
   RewriteRule ^blog/?$ blog/index.html [L]
-  RewriteRule ^blog/que-hacer-seguro-accidente-transito/?$ blog/que-hacer-seguro-accidente-transito.html [L]
-  RewriteRule ^blog/fraude-en-seguros-estrategias-efectivas/?$ blog/fraude-en-seguros-estrategias-efectivas.html [L]
-  RewriteRule ^blog/errores-comunes-al-elegir-seguro-auto/?$ blog/errores-comunes-al-elegir-seguro-auto.html [L]
-  RewriteRule ^blog/servicio-de-asistencia-aseguradoras/?$ blog/servicio-de-asistencia-aseguradoras.html [L]
-  RewriteRule ^blog/ranking-ventas-autos-agosto-2025/?$ blog/ranking-ventas-autos-agosto-2025.html [L]
-  RewriteRule ^blog/freelance-a-pymes-proteccion-de-tu-negocio/?$ blog/freelance-a-pymes-proteccion-de-tu-negocio.html [L]
+  RewriteRule ^blog/([^/]+)/?$ blog/$1.html [L]
 
 </IfModule>
