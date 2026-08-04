@@ -20,6 +20,8 @@
 
   # ── Clean slug → .html file (generic — covers all current and future posts) ──
   RewriteRule ^blog/?$ blog/index.html [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule ^blog/([^/]+)/?$ blog/$1.html [L]
 
 </IfModule>
