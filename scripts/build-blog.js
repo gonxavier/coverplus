@@ -33,7 +33,7 @@ const GONZALO = {
   bio:      'Productor Asesor de Seguros matriculado, con más de una década acompañando a familias y empresas en la elección y gestión de sus coberturas. Fundador de Cover+, una propuesta digital centrada en el asesoramiento personalizado, la transparencia y el respaldo real ante cada siniestro.',
   photo:    '/assets/img/gonzalo_dominguez_pfp.png',
   linkedin: 'https://www.linkedin.com/in/gonzalo-dom%C3%ADnguez-5203485b/',
-  x:        'https://x.com/coverplus_ar',
+  x:        'https://x.com/GonzaloCover_',
 };
 
 // ─── Contentful Delivery API fetch ───────────────────────────────────────────
