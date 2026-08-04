@@ -26,6 +26,16 @@ if (!SPACE_ID || !DELIVERY_TOKEN) {
 
 const BLOG_DIR = path.join(__dirname, '../blog');
 
+// ─── Author ───────────────────────────────────────────────────────────────────
+const GONZALO = {
+  name:     'Gonzalo Javier Domínguez',
+  title:    'Productor Asesor de Seguros · Mat. SSN N° 93065',
+  bio:      'Productor Asesor de Seguros matriculado, con más de una década acompañando a familias y empresas en la elección y gestión de sus coberturas. Fundador de Cover+, una propuesta digital centrada en el asesoramiento personalizado, la transparencia y el respaldo real ante cada siniestro.',
+  photo:    '/assets/img/gonzalo_dominguez_pfp.png',
+  linkedin: 'https://www.linkedin.com/in/gonzalo-dom%C3%ADnguez-5203485b/',
+  x:        'https://x.com/GonzaloCover_',
+};
+
 // ─── Contentful Delivery API fetch ───────────────────────────────────────────
 
 async function fetchPosts() {
@@ -352,7 +362,7 @@ function generatePostHtml(post) {
         <div class="article">
             <div class="article-header">
                 <h1 class="article-title">${escapeHtml(post.title)}</h1>
-                <p class="article-meta">Publicado el ${dateFormatted} | Por ${escapeHtml(post.author)}</p>
+                <p class="article-meta">Publicado el ${dateFormatted} | Por <a href="#author" class="article-author-link">${escapeHtml(post.author)}</a></p>
             </div>
 
             <div class="article-content">
@@ -360,6 +370,22 @@ function generatePostHtml(post) {
                 ${mobileImg ? `<img class="img-mobile" src="${escapeHtml(mobileImg)}" alt="${escapeHtml(post.title)}">` : ''}
 
                 ${bodyHtml}
+            </div>
+        </div>
+    </section>
+
+    <section id="author" class="author-card-section">
+        <div class="author-card">
+            <img src="${GONZALO.photo}" alt="Foto de ${GONZALO.name}" class="author-card__photo">
+            <div class="author-card__body">
+                <p class="author-card__label">Escrito por</p>
+                <h2 class="author-card__name">${GONZALO.name}</h2>
+                <p class="author-card__title">${GONZALO.title}</p>
+                <p class="author-card__bio">${GONZALO.bio}</p>
+                <div class="author-card__links">
+                    <a href="${GONZALO.linkedin}" target="_blank" rel="noopener noreferrer" class="author-card__link">LinkedIn →</a>
+                    <a href="${GONZALO.x}" target="_blank" rel="noopener noreferrer" class="author-card__link">X →</a>
+                </div>
             </div>
         </div>
     </section>`,
