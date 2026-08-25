@@ -29,7 +29,7 @@ const BLOG_DIR = path.join(__dirname, '../blog');
 // Cache-buster for our own stylesheets. Hostinger serves CSS with
 // max-age=604800 (7 days), so bump this whenever post-styles.css or
 // blog-styles.css changes — otherwise returning visitors keep the stale file.
-const ASSET_VERSION = '3';
+const ASSET_VERSION = '4';
 
 // ─── Author ───────────────────────────────────────────────────────────────────
 const GONZALO = {
