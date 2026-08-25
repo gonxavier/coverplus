@@ -149,6 +149,7 @@ header h1 {
     max-width: 900px;
     margin: 0 auto 60px;
     padding: 0;
+    background-color: transparent;
 }
 
 .author-card {
