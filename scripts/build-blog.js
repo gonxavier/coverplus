@@ -26,6 +26,11 @@ if (!SPACE_ID || !DELIVERY_TOKEN) {
 
 const BLOG_DIR = path.join(__dirname, '../blog');
 
+// Cache-buster for our own stylesheets. Hostinger serves CSS with
+// max-age=604800 (7 days), so bump this whenever post-styles.css or
+// blog-styles.css changes — otherwise returning visitors keep the stale file.
+const ASSET_VERSION = '3';
+
 // ─── Author ───────────────────────────────────────────────────────────────────
 const GONZALO = {
   name:     'Gonzalo Javier Domínguez',
@@ -210,7 +215,7 @@ const HEAD = (metaTitle, metaDescription, slug, ogImage = '', post = {}) => `<!D
     <link href="../assets/css/estilos-propios.css" rel="stylesheet">
 
     <!-- Post CSS File -->
-    <link rel="stylesheet" href="../assets/css/post-styles.css">
+    <link rel="stylesheet" href="../assets/css/post-styles.css?v=${ASSET_VERSION}">
 
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/09674008a9.js" crossorigin="anonymous"></script>
@@ -456,7 +461,7 @@ function generateIndexHtml(posts) {
     <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="/assets/css/main.css" rel="stylesheet">
     <link href="/assets/css/estilos-propios.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/blog-styles.css">
+    <link rel="stylesheet" href="/assets/css/blog-styles.css?v=${ASSET_VERSION}">
     <script src="https://kit.fontawesome.com/09674008a9.js" crossorigin="anonymous"></script>
 </head>
 
