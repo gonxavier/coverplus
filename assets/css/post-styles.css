@@ -162,7 +162,7 @@ body {
 .author-card-section {
     max-width: 900px;
     margin: 0 auto 60px;
-    padding: 0 20px;
+    padding: 0;
 }
 
 .author-card {
@@ -239,6 +239,12 @@ body {
 .author-card__link:hover {
     opacity: 0.75;
     color: #FF7A59;
+}
+
+@media (max-width: 768px) {
+    .author-card-section {
+        padding: 0 15px;
+    }
 }
 
 @media (max-width: 560px) {
