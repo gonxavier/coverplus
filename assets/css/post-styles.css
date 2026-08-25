@@ -18,6 +18,11 @@ body {
 
 
 
+/* Override body justify for footer links */
+.footer .footer-links ul a {
+    text-align: left;
+}
+
 /* Contenedor del artículo */
 .article-container {
     max-width: 900px;
