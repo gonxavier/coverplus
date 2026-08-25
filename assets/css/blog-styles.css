@@ -145,11 +145,12 @@ header h1 {
     text-underline-offset: 3px;
 }
 
-.author-card-section {
+section.author-card-section {
     max-width: 900px;
     margin: 0 auto 60px;
     padding: 0;
     background-color: transparent;
+    overflow: visible;
 }
 
 .author-card {
