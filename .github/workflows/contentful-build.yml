@@ -4,6 +4,12 @@ on:
   repository_dispatch:
     types: [contentful-publish]
   workflow_dispatch:
+  schedule:
+    # Safety net: the Contentful webhook is the primary trigger, but if it
+    # ever fails silently (expired token, misconfigured URL, etc.) this
+    # catches up any published posts within 24h instead of leaving the
+    # blog stale indefinitely. See git history around 2026-09-01 for why.
+    - cron: '0 13 * * *' # 10:00 America/Argentina/Buenos_Aires (UTC-3)
 
 permissions:
   contents: write
