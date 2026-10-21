@@ -28,7 +28,9 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '24'
+          # Pinned to the 2026-10-21 security release; '24' alone resolved to
+          # the unpatched 24.22.0 while setup-node's manifest lagged.
+          node-version: '24.22.1'
 
       - name: Install dependencies
         run: rm -rf node_modules && npm install
